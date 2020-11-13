@@ -1,8 +1,8 @@
+/*Edit the body part*/
 body {
-  font-family: monospace;
+  font-family: cursive;
   margin: 0px;
   padding: 0px;
-  background-color: #ccc;
 }
 
 .header {
@@ -62,19 +62,22 @@ body {
 
 /*Edit the width of the searchBar*/
 .searchBar {
-  width: 300px;
+  width: 700px;
+  height: 20px;
 }
 
 /*Edit the margin of the search tool*/
 .search {
   margin-top: 40px;
 }
+.search-buttom:hover{
+  background-color: green;
+  color: white;
+}
 
 /*Promotion Part*/
 /*Main Promotion container edition*/
-
-
-.coupon-icon{
+.coupon-icon {
   display: inline;
 }
 
@@ -83,7 +86,7 @@ body {
   display: inline;
   padding: 10px;
   position: absolute;
-  left:3%;
+  left: 3%;
   max-width: 500px;
   border: 3px solid black;
   background-color: #ea9999;
@@ -115,56 +118,57 @@ body {
   width: 25%;
   height: 25%;
 }
-.icon{
+
+.icon {
   width: auto;
   display: inline;
   position: absolute;
   left: 70%;
   top: 30%;
 }
-.promotion-text{
+
+.promotion-text {
   color: white;
   font-size: 15px;
   position: absolute;
   top: 10%;
 }
-.promotion-bottom{
+
+.promotion-bottom {
   position: absolute;
   top: 60%;
 }
-/*Items container*/
-.items-container{
-  left:3%;
-  width: 100%;
-  position: relative;
-  top: 400px;
+/*Product part */
+.product-container{
+  position: absolute;
+  top: 1400px;
+  width:100%;
 }
 .categories-container{
-  width: 30%;
+  vertical-align: top;
+  width: 20%;
 }
-.item1{
-  padding: 10px;
-  position: absolute;
-  left: 16%;
-  width: 10%;
-  height: auto;
-  border: 1px solid black;
+.category-item{
+  list-style: none;
+  font-size: 30px;
+}
+.category-item:hover{
+  background-color: gray;
+  color: white;
 }
 
-.item2{
-  padding: 10px;
-  position: absolute;
-  left: 43%;
-  width: 10%;
-  height: auto;
-  border: 1px solid black;
+/*Item part which consists of 2 rows and 1 row has 3 column of items*/
+.item-section{
+    background-color: #e8e8e8;
 }
-.item3{
-  padding: 10px;
-  position: absolute;
-  left: 70%;
+.item-container{
+  border-spacing: 70px;
+  width: 100%;
+}
+.item{
+  background-color: white;
+  padding: 1%;
   width: 10%;
-  height: auto;
   border: 1px solid black;
 }
 .discount{
@@ -172,8 +176,8 @@ body {
   border-radius: 10px;
   background: orange;
   padding: 10px;
-  position: absolute;
-  left: 85%;
+  position: relative;
+  left: 88%;
 }
 .original-price{
   color: red;
@@ -181,21 +185,155 @@ body {
 }
 .sale-price{
   display: inline;
+  color:green;
+  font-size: 20px;
 }
 .cart-buttom{
   position: absolute;
   left: 80%;
-}
-.items-container1{
-  left:3%;
-  width: 100%;
-  position: relative;
-  top: 900px;
 }
 .item-image{
   display: inline;
   width: 100%;
 }
 .cart{
-  width: 30%;
+  position: relative;
+  left: 70%;
+  width: 20%;
+}
+.searchmore{
+  width: 100%;
+  text-align: center;
+}
+.search-more{
+  border-spacing: 60px;
+  width: 10%;
+  background-color: green;
+  color: #010101;
+  border-radius: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+/*Product Page*/
+.Product_detail_section{
+  width: 100%;
+  background-color: white;
+
+}
+.discount_detail{
+  width: 30px;
+    border-radius: 10px;
+    background: orange;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    left: 80%;
+}
+.product_feature{
+  padding: 1%;
+  width: 25%;
+  border-right: 3px solid #e8e8e8;
+}
+.view-image{
+  border:3px solid #e8e8e8;
+  width: 80%;
+}
+.product_detail{
+  padding: 1%;
+}
+.product_title{
+  display: inline;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 4%;
+}
+.sale_title{
+  position: relative;
+  left: 60%;
+  display: inline;
+}
+.des_detail{
+  margin-bottom: 30%;
+}
+.shopping_cart{
+  display: block;
+  margin-bottom: 4%;
+}
+.shopping_cart:hover{
+  background-color: green;
+  color: white;
+}
+.Type_Detail{
+  display: inline;
+  width: 100px;
+  background-color: #e8e8e8;
+  padding: 1%;
+  border-radius: 10px;
+}
+.Type_Detail_1{
+  margin: 10px;
+  background-color: #e8e8e8;
+  display: inline;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+/*Comment section*/
+.Comment{
+  width: 100%;
+  border-spacing: 60px 2px;;
+}
+.Comment-box1{
+  width: 100%;
+  background-color: white;
+  border-width: 2px 2px 0px 2px;
+  border-color: gray;
+  border-style: solid;
+}
+
+.Comment-box2{
+  padding: 2%;
+  width: 100%;
+  background-color: white;
+  border-width: 0px 2px 2px 2px;
+  border-color: gray;
+  border-style: solid;
+}
+.Comment_icon{
+  width: 10%;
+  text-align: center;
+  vertical-align: middle;
+}
+.fa-user-circle{
+  font-size: 80px;
+}
+.Comment_name{
+  color: #037ef3;
+}
+.Comment_title_des{
+  color: gray;
+}
+/*Review Section*/
+.Review{
+  width: 100%;
+  border-spacing:60px 0px;
+}
+.Review_title{
+  width: 185px;
+  background-color: #e8e8e8;
+  position: relative;
+  top: 10px;
+  left: 3%;
+}
+.text_input{
+  border: 3px solid black;
+  width: 100%;
+  height: 300px;
+  background-color: #e8e8e8;
+}
+.Submit_buttom{
+  position: relative;
+  left: 87%;
 }
